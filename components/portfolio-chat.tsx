@@ -118,8 +118,10 @@ export function PortfolioChat() {
           </ScrollArea>
           {error && (
             <p className="px-4 text-sm text-red-400" role="alert">
-              {error.message ||
-                "Something went wrong. Check your API key and connection."}
+              {error.message &&
+              error.message !== "An error occurred."
+                ? error.message
+                : "Request failed. Check the dev server terminal for [api/chat] errors (API key, model, or network)."}
             </p>
           )}
           <form

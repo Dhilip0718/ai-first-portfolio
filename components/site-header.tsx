@@ -22,9 +22,9 @@ export function SiteHeader() {
             <p className="text-xs uppercase tracking-widest text-muted-foreground">
               Senior Full Stack Software Engineer
             </p>
-            <h1 className="text-2xl font-bold tracking-tight sm:text-3xl">
+            <p className="text-2xl font-bold tracking-tight text-foreground sm:text-3xl">
               Dhilip
-            </h1>
+            </p>
           </div>
         </div>
         <address className="not-italic">

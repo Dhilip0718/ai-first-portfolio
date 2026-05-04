@@ -32,20 +32,27 @@ function Tile({
   className,
   children,
   delay = 0,
+  id,
 }: {
   className?: string;
   children: ReactNode;
   delay?: number;
+  id?: string;
 }) {
   const reduceMotion = useReducedMotion();
 
   if (reduceMotion) {
-    return <div className={cn("h-full", className)}>{children}</div>;
+    return (
+      <div className={cn("h-full scroll-mt-24", className)} id={id}>
+        {children}
+      </div>
+    );
   }
 
   return (
     <motion.div
-      className={cn("h-full", className)}
+      className={cn("h-full scroll-mt-24", className)}
+      id={id}
       {...reducedMotionProps}
       transition={{ ...reducedMotionProps.transition, delay }}
     >
@@ -57,7 +64,7 @@ function Tile({
 export function BentoGrid() {
   return (
     <div className="mx-auto grid max-w-6xl grid-cols-1 gap-4 px-4 pb-16 pt-6 md:grid-cols-12 md:gap-5 md:pt-8">
-      <Tile className="md:col-span-7" delay={0}>
+      <Tile id="about" className="md:col-span-7" delay={0}>
         <Card className="h-full border-border/80 bg-card/80">
           <CardHeader>
             <CardTitle className="flex items-center gap-2 text-xl">
@@ -112,11 +119,7 @@ export function BentoGrid() {
         </Card>
       </Tile>
 
-      <Tile className="lg:col-span-8 lg:row-span-2" delay={0.1}>
-        <PortfolioChat />
-      </Tile>
-
-      <Tile className="lg:col-span-4" delay={0.12}>
+      <Tile id="skills" className="lg:col-span-4" delay={0.1}>
         <Card className="h-full border-border/80 bg-card/80">
           <CardHeader>
             <CardTitle className="flex items-center gap-2 text-xl">
@@ -153,7 +156,7 @@ export function BentoGrid() {
         </Card>
       </Tile>
 
-      <Tile className="lg:col-span-4" delay={0.14}>
+      <Tile className="lg:col-span-4" delay={0.12}>
         <Card className="h-full border-border/80 bg-card/80">
           <CardHeader>
             <CardTitle className="flex items-center gap-2 text-xl">
@@ -171,7 +174,7 @@ export function BentoGrid() {
         </Card>
       </Tile>
 
-      <Tile className="md:col-span-12 lg:col-span-8" delay={0.16}>
+      <Tile id="clients" className="md:col-span-12 lg:col-span-8" delay={0.14}>
         <Card className="border-border/80 bg-card/80">
           <CardHeader>
             <CardTitle className="flex items-center gap-2 text-xl">
@@ -217,7 +220,7 @@ export function BentoGrid() {
         </Card>
       </Tile>
 
-      <Tile className="md:col-span-12 lg:col-span-4" delay={0.18}>
+      <Tile className="md:col-span-12 lg:col-span-4" delay={0.16}>
         <Card className="h-full border-border/80 bg-card/80">
           <CardHeader>
             <CardTitle className="flex items-center gap-2 text-xl">
@@ -240,7 +243,7 @@ export function BentoGrid() {
         </Card>
       </Tile>
 
-      <Tile className="md:col-span-12" delay={0.2}>
+      <Tile id="projects" className="md:col-span-12" delay={0.18}>
         <Card className="border-border/80 bg-card/80">
           <CardHeader>
             <CardTitle className="text-xl">Personal projects</CardTitle>
@@ -273,6 +276,10 @@ export function BentoGrid() {
             </article>
           </CardContent>
         </Card>
+      </Tile>
+
+      <Tile id="chat" className="md:col-span-12" delay={0.2}>
+        <PortfolioChat />
       </Tile>
     </div>
   );
