@@ -1,0 +1,9 @@
+[build]
+  command = "npm run build"
+
+# Next.js 15 (App Router + API routes) — do not set a static "publish" dir; the plugin handles output.
+[[plugins]]
+  package = "@netlify/plugin-nextjs"
+
+[build.environment]
+  NODE_VERSION = "20"
