@@ -72,7 +72,7 @@ export function BentoGrid() {
               Profile
             </CardTitle>
             <CardDescription>
-              11+ years building high-performance web apps and distributed systems;
+              13+ years building high-performance web apps and distributed systems;
               React, TypeScript, GraphQL, Next.js; AI-facing tooling (MCP), Python,
               and full-cycle delivery with DevOps and Kubernetes.
             </CardDescription>
