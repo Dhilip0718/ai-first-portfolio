@@ -73,7 +73,7 @@ export function BentoGrid() {
             </CardTitle>
             <CardDescription>
               13+ years building high-performance web apps and distributed systems;
-              React, TypeScript, GraphQL, Next.js; AI-facing tooling (MCP), Python,
+              React, Angular,TypeScript, GraphQL, Next.js; AI-facing tooling (MCP), Python,
               and full-cycle delivery with DevOps and Kubernetes.
             </CardDescription>
           </CardHeader>
