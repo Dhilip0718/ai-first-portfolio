@@ -9,11 +9,11 @@ const COPY = {
   name: "Dhilip",
   title: "Senior Full Stack Software Engineer",
   subtitle:
-    "I build high-performance web applications and distributed systems—React, TypeScript, GraphQL, and Next.js—with strong DevOps and design-system delivery.",
+    "I build high-performance web applications and distributed systems—React, TypeScript, GraphQL, and Next.js—plus AI/developer tooling (MCP, Python) with strong DevOps and design-system delivery.",
   ctaPrimary: "View My Work",
   ctaSecondary: "Get In Touch",
   codeFile: "developer.ts",
-  skills: ["React", "TypeScript", "Next.js", "Angular", "NestJS"] as const,
+  skills: ["React", "TypeScript", "Next.js", "Python", "MCP"] as const,
   passion: "Building user-centric software at scale",
 };
 

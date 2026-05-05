@@ -6,7 +6,8 @@ PROFILE
 Senior Full Stack Software Engineer with 11+ years of experience in developing and delivering
 high-performance web applications and distributed systems. Proficient in React, TypeScript, GraphQL, and
 Next.js, with a strong background in frontend, backend, and DevOps practices, including CI/CD pipeline
-management and Kubernetes deployments. Adept at designing and implementing extensible design
+management and Kubernetes deployments. Experience shipping MCP-based integrations so AI assistants and
+IDEs can search internal documentation securely (Python, FastMCP, Azure auth). Adept at designing and implementing extensible design
 systems, optimizing operational efficiency, and driving full-cycle software development from concept to
 deployment for user-centric solutions.
 SKILLS
@@ -16,9 +17,10 @@ UX Design
 Backend Development: Node.js, Python, Django, NestJS, Prisma ORM, ZOD, REST APIs, Web
 Services, OpenAPI, Streaming APIs, GraphQL
 DevOps & Cloud: Azure DevOps, DevOps, CI/CD Pipelines, Kubernetes, Docker, GitHub, Azure AD,
-TIBCO Business, Enterprise Message Service (EMS)
+GitOps / Argo CD (where applicable), TIBCO Business, Enterprise Message Service (EMS)
 Databases: PostgreSQL, Oracle SQL
-AI/Tools: Generative AI, CoPilot
+AI/Tools: Generative AI, CoPilot, Model Context Protocol (MCP), FastMCP, Python,
+semantic search for documentation, IDE/agent integrations, OAuth / PAT auth with Azure
 Software Engineering Principles: Web Development Best Practices, Design Patterns, Scalability
 Principles, Component Reuse, Full-cycle Software Development
 Testing: Unit Testing, Integration Testing, End-to-End Testing
@@ -41,6 +43,9 @@ components that enhanced development efficiency by [X%] and maintainability acro
 promoting component reuse.
 • Optimized website performance and user experience using responsive web design and advanced web
 tooling, reducing load times by [X%] and improving core web vitals for [N+] users.
+• Built and maintained a production MCP server (Python, FastMCP) that exposes document search,
+assistant chat, and session management to IDEs and agents, with Azure OAuth/PAT auth and
+Kubernetes / GitOps deployment—connecting developer tooling to internal knowledge bases.
 Full Stack DevOps Engineer — Tata Consultancy Services
 01/2021 – 10/2021
 Amsterdam
@@ -79,6 +84,6 @@ community/social content, and WhatsApp pre-order (Angular, Tailwind).
 NATIONALITY
 Dutch
 EDUCATION
-Bachelor of Science Mechanical Engineering — PSNA CET - Tamil Nadu LANGUAGES
+Bachelor of Engineering Mechanical Engineering — PSNA CET - Tamil Nadu LANGUAGES
 English - Professional, Dutch - A2 - Professional Working Basics
 08/2008 – 08/2012

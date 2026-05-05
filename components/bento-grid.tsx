@@ -73,15 +73,16 @@ export function BentoGrid() {
             </CardTitle>
             <CardDescription>
               11+ years building high-performance web apps and distributed systems;
-              React, TypeScript, GraphQL, Next.js; full-cycle delivery with DevOps
-              and Kubernetes.
+              React, TypeScript, GraphQL, Next.js; AI-facing tooling (MCP), Python,
+              and full-cycle delivery with DevOps and Kubernetes.
             </CardDescription>
           </CardHeader>
           <CardContent className="text-sm leading-relaxed text-muted-foreground">
             <p>
               Strong in extensible design systems, CI/CD, and user-centric delivery
               from concept to deployment—currently Frontend Engineer at Backbase,
-              Amsterdam.
+              Amsterdam, including developer-facing MCP integrations so IDEs and
+              assistants can query internal documentation securely.
             </p>
           </CardContent>
         </Card>
@@ -102,8 +103,11 @@ export function BentoGrid() {
             {[
               "React",
               "Next.js",
+              "Angular",
               "TypeScript",
               "GraphQL",
+              "Python",
+              "MCP",
               "Node.js",
               "NestJS",
               "Azure",
@@ -152,6 +156,14 @@ export function BentoGrid() {
                 PostgreSQL, Oracle SQL.
               </p>
             </div>
+            <div>
+              <p className="font-medium text-foreground">AI &amp; developer tooling</p>
+              <p>
+                Model Context Protocol (MCP), FastMCP, semantic doc search, OAuth /
+                token auth for assistants and IDEs, REST APIs for integrations,
+                GitOps-style deploys where applicable.
+              </p>
+            </div>
           </CardContent>
         </Card>
       </Tile>
@@ -185,16 +197,25 @@ export function BentoGrid() {
               Recent roles—details map to resume bullets for deeper screening.
             </CardDescription>
           </CardHeader>
-          <CardContent className="grid gap-4 md:grid-cols-3">
+          <CardContent className="grid gap-6 md:grid-cols-3">
             <section aria-labelledby="role-backbase">
               <h4 id="role-backbase" className="font-semibold text-foreground">
                 Frontend Engineer — Backbase
               </h4>
               <p className="text-xs text-muted-foreground">Amsterdam · Nov 2021 – Present</p>
-              <p className="mt-2 text-sm text-muted-foreground">
-                React/TypeScript products at scale, design system contributions,
-                cross-functional releases, performance and Core Web Vitals focus.
-              </p>
+              <ul className="mt-2 list-inside list-disc space-y-2 text-sm text-muted-foreground">
+                <li>
+                  React/TypeScript products at scale, design system contributions,
+                  cross-functional releases, performance and Core Web Vitals focus.
+                </li>
+                <li>
+                  Built and maintained a production{" "}
+                  <span className="font-medium text-foreground">MCP server</span>{" "}
+                  (Python, FastMCP) so Cursor, agents, and internal tooling answer
+                  questions from Backbase documentation via semantic search and chat—
+                  with Azure OAuth/PAT auth and Kubernetes/GitOps deployment.
+                </li>
+              </ul>
             </section>
             <section aria-labelledby="role-tcs-devops">
               <h4 id="role-tcs-devops" className="font-semibold text-foreground">
@@ -231,7 +252,7 @@ export function BentoGrid() {
           </CardHeader>
           <CardContent className="space-y-3 text-sm text-muted-foreground">
             <p>
-              <span className="font-medium text-foreground">B.Sc. Mechanical Engineering</span>
+              <span className="font-medium text-foreground">Bachelor of Engineering - Mechanical Engineering</span>
               {" · "}
               PSNA CET, Tamil Nadu (2008–2012)
             </p>
